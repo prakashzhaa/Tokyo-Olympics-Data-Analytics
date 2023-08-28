@@ -124,7 +124,7 @@
 				]
 			},
 			{
-				"name": "Copy data3",
+				"name": "Teams",
 				"type": "Copy",
 				"dependsOn": [
 					{
