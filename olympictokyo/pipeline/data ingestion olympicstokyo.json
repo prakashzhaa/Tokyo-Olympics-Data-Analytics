@@ -92,7 +92,7 @@
 				}
 			},
 			{
-				"name": "Copy data4",
+				"name": "Gender",
 				"type": "Copy",
 				"dependsOn": [
 					{
@@ -111,8 +111,24 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "HttpReadSettings",
+							"requestMethod": "GET"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
 					"enableStaging": false
-				}
+				},
+				"inputs": [
+					{
+						"referenceName": "DelimitedText1",
+						"type": "DatasetReference"
+					}
+				]
 			},
 			{
 				"name": "Coaches",
